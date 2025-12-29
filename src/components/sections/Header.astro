@@ -7,14 +7,14 @@ import ThemeToggle from '../ui/button/ThemeToggle.astro';
 <header class="bg-background text-foreground border-b sw-header">
     <nav class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between">
         <div class="flex items-center gap-3">
-            <a class="no-underline hover:opacity-90 flex items-center gap-2" href="/" aria-label="Home">
-                <img src="/favicon.png?v=1" alt="" aria-hidden="true" width="45" height="45" />
+            <a class="no-underline hover:opacity-90 flex items-center gap-2" href="/Portfolio" aria-label="Home">
+                <img src="/Portfolio/favicon.png?v=1" alt="" aria-hidden="true" width="45" height="45" />
             </a>
             <div class="internal-links hidden md:flex items-center gap-2 ml-1">
-                <HeaderLink href="/" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Home</HeaderLink>
-                <HeaderLink href="/portfolio" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Portfolio</HeaderLink>
-                <HeaderLink href="/about" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">About</HeaderLink>
-                <HeaderLink href="/blog" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Blog</HeaderLink>
+                <HeaderLink href="/Portfolio" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Home</HeaderLink>
+                <HeaderLink href="/Portfolio/portfolio/" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Portfolio</HeaderLink>
+                <HeaderLink href="/Portfolio/about/" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">About</HeaderLink>
+                <HeaderLink href="/Portfolio/blog/" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Blog</HeaderLink>
                 <a href="#contact" class="px-2 py-3 text-[color:var(--color-text-secondary)] no-underline">Contact</a>
             </div>
         </div>
@@ -39,10 +39,10 @@ import ThemeToggle from '../ui/button/ThemeToggle.astro';
     <div id="mobile-menu" class="md:hidden hidden border-t">
         <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2">
             <div class="flex flex-col">
-                <HeaderLink href="/" class="px-2 py-3">Resume</HeaderLink>
-                <HeaderLink href="/portfolio" class="px-2 py-3">Portfolio</HeaderLink>
-                <HeaderLink href="/about" class="px-2 py-3">About</HeaderLink>
-                <HeaderLink href="/blog" class="px-2 py-3">Blog</HeaderLink>
+                <HeaderLink href="/Portfolio" class="px-2 py-3">Resume</HeaderLink>
+                <HeaderLink href="/Portfolio/portfolio" class="px-2 py-3">Portfolio</HeaderLink>
+                <HeaderLink href="/Portfolio/about" class="px-2 py-3">About</HeaderLink>
+                <HeaderLink href="/Portfolio/blog" class="px-2 py-3">Blog</HeaderLink>
                 <a href="#contact" class="px-2 py-3">Contact</a>
             </div>
             <div class="flex items-center gap-4 pt-2">
