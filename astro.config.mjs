@@ -9,7 +9,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://PremierofPotatoes.github.io',
+  site: 'https://premierofpotatoes.github.io',
   base: '/Portfolio',
   integrations: [mdx(), sitemap()],
 
