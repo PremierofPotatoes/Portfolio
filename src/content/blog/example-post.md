@@ -1,12 +1,13 @@
 ---
-title: 'Example Post One'
-description: 'Sample article demonstrating the blog layout, cards, and meta.'
-pubDate: 'Aug 12 2025'
-category: 'Showcase'
-tags: ['template', 'demo']
+title: 'Nothing to see here'
+description: 'This is not done yet'
+pubDate: 'Dec 31 2025'
+category: 'Easter-egg'
+tags: ['Easter-egg']
+heroImage: '../../assets/images/Like A Tachyon.png'
 ---
 
-<!-- heroImage: '../../assets/images/example-blog-hero1.jpg' -->
+
 This is a sample article used in the starter template. Replace it with your own content.
 
 - Edit the title, description, and frontmatter
