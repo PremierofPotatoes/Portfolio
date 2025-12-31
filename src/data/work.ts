@@ -11,22 +11,14 @@ export const workIcons = {
 
 export const work = [
   {
-    title: "Senior Software Engineer",
-    company: "Acme Cloud",
-    region: "United States",
+    title: "Assistant Researcher",
+    company: "SUTD EPD Airlab",
+    region: "Singapore",
     description:
-      "Led the design and delivery of a multi‑tenant platform, decomposed critical monolith paths into services, improved p95 latency by 40%, defined SLOs and on‑call rotations, and mentored junior engineers.",
+      "Designed and produced parts for a waterproof concept X8 drone. Improved on previous propeller guard designs. Assisted in the researching of parts to source online.",
     technologies: [
-      "TypeScript",
-      "Node.js",
-      "React",
-      "PostgreSQL",
-      "Redis",
-      "AWS",
-      "Docker",
-      "Kubernetes",
-      "Terraform",
-      "GraphQL",
+      "Solidworks",
+      "Bambu Studio",
     ],
   },
   {
