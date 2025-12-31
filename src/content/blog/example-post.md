@@ -4,7 +4,7 @@ description: 'This is not done yet'
 pubDate: 'Dec 31 2025'
 category: 'Easter-egg'
 tags: ['Easter-egg']
-
+heroImage: '../../assets/images/Like A Tachyon.png'
 ---
 
 heroImage: '../../assets/images/Like A Tachyon.png'
