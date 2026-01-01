@@ -41,7 +41,7 @@ try {
   </div>
   {post.data.tags && post.data.tags.length > 0 && (
     <div class="flex gap-2 flex-wrap">
-      {post.data.tags.map((t) => <a href={`/Portfolio/blog/tag/${t.replace(/\s+/g,'-').toLowerCase()}/`} class="sw-tag interactive-link">{t}</a>)}
+      {post.data.tags.map((t) => <a href={`/Portfolio/blog/tag/${t.replace(/\s+/g,'-')}/`} class="sw-tag interactive-link">{t}</a>)}
     </div>
   )}
   <a href={`/Portfolio/blog/${post.id}/`} class="stretched-link" aria-label={post.data.title}></a>
