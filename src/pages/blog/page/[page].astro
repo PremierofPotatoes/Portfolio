@@ -28,10 +28,10 @@ const totalPages = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
   <head>
     <BaseHead title={`Blog - Page ${currentPage}`} description={`Blog page ${currentPage}`} />
     {currentPage > 1 && (
-      <link rel="prev" href={currentPage === 2 ? `/blog/` : `/blog/page/${currentPage - 1}/`} />
+      <link rel="prev" href={currentPage === 2 ? `/Portfolio/blog/` : `/Portfolio/blog/page/${currentPage - 1}/`} />
     )}
     {currentPage < totalPages && (
-      <link rel="next" href={`/blog/page/${currentPage + 1}/`} />
+      <link rel="next" href={`/Portfolio/blog/page/${currentPage + 1}/`} />
     )}
   </head>
   <body>

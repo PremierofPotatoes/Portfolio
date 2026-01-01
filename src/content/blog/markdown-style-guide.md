@@ -3,10 +3,8 @@ title: 'Something important about markdown'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Dec 31 2025'
 tags: ['Easter-egg','astro']
-
----
-
 heroImage: '../../assets/images/Follow for more recepies.jpg'
+---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
