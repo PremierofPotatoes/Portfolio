@@ -14,7 +14,7 @@ export const studies = [
     ],
   },
   {
-    title: "O-level Graduate",
+    title: "O-levels",
     institution: "Secondary School",
     description:
       "Built foundations for Math, Science and learnt basic skills.",
