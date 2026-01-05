@@ -1,27 +1,26 @@
 export const studies = [
   {
-    title: "B.S. in Computer Science",
-    institution: "State University",
+    title: "Diploma in Robotics and Mechatronics",
+    institution: "Local Polytechnic",
     description:
-      "Core CS foundations: data structures, algorithms, operating systems, networking, and databases; team capstone in web systems.",
+      "Built foundations for: CAD Modelling, coding, networking, Automation systems, Physics and Math, and Entrepreneurship.",
     tags: [
-      "Algorithms",
+      "CAD Modelling",
       "Data Structures",
-      "Operating Systems",
-      "Databases",
+      "Automation Systems",
       "Networking",
+      "Mechanism Design",
+      "Entrepreneurship",
     ],
   },
   {
-    title: "M.S. in Software Engineering",
-    institution: "Tech Institute",
+    title: "O-level Graduate",
+    institution: "Secondary School",
     description:
-      "Focus on distributed systems, testing strategies, and cloud architecture; thesis on resilience patterns in microservices.",
+      "Built foundations for Math, Science and learnt basic skills.",
     tags: [
-      "Distributed Systems",
-      "Cloud Architecture",
-      "Testing",
-      "Microservices",
+      "Basics",
+      "67",
     ],
   },
 ];
