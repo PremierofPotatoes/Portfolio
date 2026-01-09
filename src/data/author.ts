@@ -1,7 +1,7 @@
 import avatar from '../assets/images/golshi.png';
 
 export const author = {
-  name: 'Site Author',
+  name: 'Teo Bei Kuan',
   avatar,
   url: '#',
 };

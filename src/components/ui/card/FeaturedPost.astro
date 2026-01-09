@@ -24,7 +24,7 @@ const { post, readingTimeMin = 0 } = Astro.props as Props;
     <div class="flex items-center gap-3 text-sm text-[color:var(--color-text-muted)]">
       <FormattedDate date={post.data.pubDate} />
       <span>•</span>
-		<a href={`/Portfolio/blog/author/${slugify(post.data.author || 'Site Author')}/`} class="hover:text-[color:var(--accent)]">{post.data.author || 'Site Author'}</a>
+		<a href={`/Portfolio/blog/author/${slugify(post.data.author || 'Teo Bei Kuan')}/`} class="hover:text-[color:var(--accent)]">{post.data.author || 'Teo Bei Kuan'}</a>
       {readingTimeMin > 0 && (<>
         <span>•</span>
         <span class="flex items-center gap-1">

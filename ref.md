@@ -222,7 +222,7 @@ updatedDate: 2024-07-02 # optional
 heroImage: ../../assets/images/your-image.jpg # optional
 tags: [astro, ui] # optional, many-to-many labels
 category: Growth # optional, 1 broad bucket per post recommended
-author: Site Author # optional; defaults to site author
+author: Teo Bei Kuan # optional; defaults to Teo Bei Kuan
 ---
 ```
 
