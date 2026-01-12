@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content';
 import rss from '@astrojs/rss';
-import { slugifyCategory } from '../../../../src/data/categories';
+import { slugifyCategory } from '../../../src/assets/PDF/Resume 02.pdf';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
