@@ -1,6 +1,7 @@
 ---
 import Button from "../ui/button/Button.astro";
 import { projects } from "../../data/projects";
+import { getIconHtml } from '../utils/IconHelper';
 
 interface Props {
   title?: string;
@@ -16,19 +17,46 @@ const { title } = Astro.props as Props;
     )}
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {projects.map((p) => (
-        <article class="card-surface p-6 relative">
-          <div class="absolute right-4 top-4 text-[var(--accent)] [&>svg]:w-6 [&>svg]:h-6" set:html={p.icon} />
-          <h3 class="text-xl font-semibold text-foreground m-0">{p.title}</h3>
-          <p class="text-sm text-[color:var(--color-text-muted)] m-0">{p.techStack}</p>
-          <p class="mt-3 text-[color:var(--color-text-secondary)]">{p.description}</p>
-          <div class="mt-6 flex justify-center">
-            <Button href={p.ctaLink} variant="primary" size="sm">{p.ctaText}</Button>
-          </div>
-        </article>
-      ))}
+      {projects.map((p) => {
+        const iconResult = getIconHtml(p.icon);
+
+        return (
+          <article class="card-surface p-6 relative group transition-all duration-300">
+            {iconResult && (
+              <div 
+                class:list={[
+                  "absolute right-6 top-6 text-[var(--accent)] opacity-80 transition-transform duration-300 group-hover:scale-110 group-hover:opacity-100",
+                  // Re-using our smart styling logic
+                  iconResult.type === 'brand' 
+                    ? "[&>svg]:fill-current [&>svg]:stroke-none" 
+                    : "[&>svg]:stroke-current [&>svg]:fill-none [&>svg]:stroke-[2px]"
+                ]}
+                set:html={iconResult.html}
+              />
+            )}
+            
+            <h3 class="text-xl font-semibold text-foreground m-0 pr-10">{p.title}</h3>
+            <p class="text-sm text-[color:var(--color-text-muted)] m-0">{p.techStack}</p>
+            <p class="mt-3 text-[color:var(--color-text-secondary)] leading-relaxed">
+              {p.description}
+            </p>
+            
+            <div class="mt-6 flex">
+              <Button href={p.ctaLink} variant="primary" size="sm">
+                {p.ctaText}
+              </Button>
+            </div>
+          </article>
+        );
+      })}
     </div>
   </div>
 </section>
 
-
+<style>
+  /* Global selector for icons within this component */
+  article :global(svg) {
+    width: 24px;
+    height: 24px;
+  }
+</style>

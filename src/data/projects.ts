@@ -1,6 +1,3 @@
-import N8nIcon from '../assets/logos/N8n-logo.svg?raw';
-import SupabaseIcon from '../assets/logos/Supabase-logo.svg?raw';
-
 export const projects = [
 	{
 		title: "Portfolio",
@@ -8,7 +5,7 @@ export const projects = [
 		description: "My RSS feed",
 		ctaText: "View RSS feed →",
 		ctaLink: "/Portfolio/rss.xml",
-		icon: N8nIcon
+		icon: "rss"
 	},
 	{
 		title: "Cover letter",
@@ -16,6 +13,6 @@ export const projects = [
 		description: "My cover letter",
 		ctaText: "Download Cover Letter →",
 		ctaLink: "/Portfolio/resume.pdf",
-		icon: SupabaseIcon
+		icon: "file-user"
 	},
 ];
