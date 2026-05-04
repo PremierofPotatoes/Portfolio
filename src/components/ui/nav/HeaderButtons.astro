@@ -20,12 +20,12 @@ const buttonIcons = [
 ]
 ---
 
-<div class="sw-share group flex items-center">
+<div class="sw-share group flex items-center gap-4">
   {buttonIcons.map((p) => {
       const iconResult = getIconHtml(p.icon);
       
       return (
-        <a href={p.url} target="_blank" rel="noopener noreferrer" class="sw-share-btn" aria-label=`{p.alt}` set:html={iconResult.html} />
+        <a href={p.url} target="_blank" rel="noopener noreferrer" class="group text-[color:var(--color-text-secondary)]" aria-label=`{p.alt}` set:html={iconResult.html} />
       )
     })}
 </div>
